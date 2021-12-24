@@ -1,0 +1,4 @@
+<app-select-country (country)="onCountryChanged($event)"></app-select-country>
+<div *ngIf="countryInfo$ | async; let countryInfo;">
+  <p>{{countryInfo}}</p>
+</div>
